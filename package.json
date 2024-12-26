@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "a backend app using javascript to run and deploy",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "start": "node src/index.js"
   },
   "keywords": [
